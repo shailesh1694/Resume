@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shailesh Mori - Software & Shopify Developer</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --text-dark: #1f2937;
+            --text-light: #4b5563;
+            --bg-light: #f3f4f6;
+            --border: #e5e7eb;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: var(--text-dark); line-height: 1.6; background-color: #fafafa; padding: 40px 20px; }
+        .container { max-width: 800px; margin: 0 auto; background: white; padding: 40px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -1px rgba(0,0,0,0.03); border-radius: 8px; }
+        header { border-bottom: 2px solid var(--border); padding-bottom: 20px; margin-bottom: 25px; }
+        h1 { font-size: 2.5rem; color: var(--text-dark); margin-bottom: 5px; }
+        .contact { display: flex; flex-wrap: wrap; gap: 15px; color: var(--text-light); font-size: 0.95rem; }
+        .contact a { color: var(--primary); text-decoration: none; }
+        .contact a:hover { text-decoration: underline; }
+        section { margin-bottom: 30px; }
+        h2 { font-size: 1.3rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--primary); border-bottom: 1px solid var(--border); padding-bottom: 5px; margin-bottom: 15px; }
+        p { color: var(--text-light); margin-bottom: 10px; }
+        .grid-skills { display: grid; grid-template-columns: 1fr; gap: 10px; margin-bottom: 10px; }
+        @media(min-width: 600px) { .grid-skills { grid-template-columns: 200px 1fr; } }
+        .skill-cat { font-weight: bold; color: var(--text-dark); }
+        .skill-vals { color: var(--text-light); }
+        .exp-item { margin-bottom: 20px; }
+        .exp-header, .proj-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; margin-bottom: 5px; }
+        .title { font-weight: bold; font-size: 1.1rem; }
+        .date { color: var(--text-light); font-size: 0.9rem; font-style: italic; }
+        ul { list-style-type: none; }
+        ul li { position: relative; padding-left: 20px; color: var(--text-light); margin-bottom: 5px; }
+        ul li::before { content: "•"; position: absolute; left: 0; color: var(--primary); font-weight: bold; }
+        .proj-item { margin-bottom: 20px; }
+        .inline-list { display: flex; flex-wrap: wrap; gap: 10px; }
+        .inline-list li { background: var(--bg-light); padding: 2px 10px; border-radius: 4px; font-size: 0.9rem; }
+        .inline-list li::before { content: ""; padding: 0; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Shailesh Mori</h1>
+        <div class="contact">
+            <span>📍 Ahmedabad</span>
+            <span>📞 8401753537</span>
+            <span>✉️ <a href="mailto:morishailesh982@gmail.com">morishailesh982@gmail.com</a></span>
+            <span>🔗 <a href="#" target="_blank">LinkedIn</a></span>
+        </div>
+    </header>
+
+    <section>
+        <h2>Professional Summary</h2>
+        <p>Software Developer with 3.6 years of experience engineering high-performance e-commerce applications, custom backend architectures, and fintech solutions. Proficient in Node.js, Express, React, Prisma ORM, PostgreSQL, Redis, and low-level system design. Experienced in leveraging AI-driven workflows and modern DevOps to build and deploy production-ready applications on VPS and cloud environments.</p>
+    </section>
+
+    <section>
+        <h2>Core Competencies</h2>
+        <div class="grid-skills">
+            <div class="skill-cat">Frontend & Frameworks</div>
+            <div class="skill-vals">JavaScript, React, React-Router, Redux Toolkit, Custom UI Components, HTML5, CSS3</div>
+            
+            <div class="skill-cat">Backend & Databases</div>
+            <div class="skill-vals">Node.js, Express, Prisma ORM, PostgreSQL, Redis, Queues, REST & GraphQL APIs</div>
+            
+            <div class="skill-cat">Shopify Development</div>
+            <div class="skill-vals">Theme Customization, Custom Apps, Checkout UI Extensions, Shopify Functions API, GraphQL Admin API, Customer Account UI Extensions, Order Status Extensions, Shopify Proxy, Webhooks</div>
+            
+            <div class="skill-cat">DevOps & Architecture</div>
+            <div class="skill-vals">VPS Management, Heroku, Render, Automated Workflows, Low-Level System Design, GDPR Compliance</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Work Experience</h2>
+        <div class="exp-item">
+            <div class="exp-header">
+                <span class="title">CreatPix InfoTech — Jr. Software Engineer</span>
+                <span class="date">Nov 2024 – Present (Ahmedabad)</span>
+            </div>
+            <ul>
+                <li>Designed and deployed custom Shopify solutions, client extensions, and high-concurrency app backend logic.</li>
+                <li>Provided technical consulting on Shopify API implementations, custom integrations, and system scalability.</li>
+            </ul>
+        </div>
+
+        <div class="exp-item">
+            <div class="exp-header">
+                <span class="title">Rupiya Finnovations Pvt Ltd — Jr. Software Engineer</span>
+                <span class="date">Dec 2022 – Jul 2024 (1 Year 6 Months)</span>
+            </div>
+            <ul>
+                <li>Engineered and maintained robust web application interfaces using React and modern component architecture.</li>
+                <li>Implemented centralized state management via Redux Toolkit to establish predictable data flow across complex application states.</li>
+                <li>Integrated core fintech payment modules, secure transaction flows, and third-party infrastructure including Razorpay.</li>
+                <li>Optimized application performance by diagnosing API bottlenecks and refining query execution paths.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Featured Projects</h2>
+        <div class="proj-item">
+            <div class="proj-header"><span class="title">Dynamic-Form App (Shopify Backend App)</span></div>
+            <ul>
+                <li>Engineered an authentication pipeline managing Shopify OAuth flows alongside Prisma ORM and PostgreSQL storage.</li>
+                <li>Designed a dynamic schema supporting custom field namespace keys to eliminate redundant fields.</li>
+                <li>Built an interactive drag-and-drop admin builder using React with live storefront preview functionality.</li>
+                <li>Established secure frontend-to-backend communication over Shopify App Proxies and Shopify GraphQL Admin APIs.</li>
+            </ul>
+        </div>
+
+        <div class="proj-item">
+            <div class="proj-header"><span class="title">Ultimate Autograph (Shopify Admin Backend App)</span></div>
+            <ul>
+                <li>Designed a database schema featuring an auto-replenishment engine for variant inventory logic.</li>
+                <li>Implemented asynchronous order processing queues using Redis webhooks and integrated dynamic notification engines.</li>
+            </ul>
+        </div>
+
+        <div class="proj-item">
+            <div class="proj-header"><span class="title">Maple & Mash Referral Platform</span></div>
+            <ul>
+                <li>Architected an end-to-end full-stack affiliate marketing platform with embedded storefront app extensions.</li>
+                <li>Integrated Stripe Billing API and webhook listeners to automate tiered subscription checkouts.</li>
+            </ul>
+        </div>
+
+        <div class="proj-item">
+            <div class="proj-header"><span class="title">Additional Shopify Projects</span></div>
+            <ul class="inline-list">
+                <li>Gifting Studio</li>
+                <li>PixMagic Backend App</li>
+                <li>Gallery Wall Backend App</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <div class="exp-header">
+            <span class="title">Shantilal Shah Engineering College</span>
+            <span class="date">Bachelor of Engineering | Graduated Jul 2016 (Bhavnagar)</span>
+        </div>
+    </section>
+</div>
+
+</body>
+</html>
